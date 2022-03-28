@@ -1,0 +1,36 @@
+{
+  "changelogDate": "20220328235156",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publicationDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "Book",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "author",
+      "relationshipName": "author_book",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": []
+    }
+  ],
+  "service": "serviceImpl"
+}

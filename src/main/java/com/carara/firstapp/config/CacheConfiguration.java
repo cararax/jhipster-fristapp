@@ -52,6 +52,7 @@ public class CacheConfiguration {
             createCache(cm, com.carara.firstapp.domain.Authority.class.getName());
             createCache(cm, com.carara.firstapp.domain.User.class.getName() + ".authorities");
             createCache(cm, com.carara.firstapp.domain.Author.class.getName());
+            createCache(cm, com.carara.firstapp.domain.Book.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

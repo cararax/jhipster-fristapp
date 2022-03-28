@@ -13,6 +13,8 @@ import settings from 'app/modules/account/settings/settings.reducer';
 import passwordReset from 'app/modules/account/password-reset/password-reset.reducer';
 // prettier-ignore
 import author from 'app/entities/author/author.reducer';
+// prettier-ignore
+import book from 'app/entities/book/book.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const rootReducer = {
@@ -27,6 +29,7 @@ const rootReducer = {
   password,
   settings,
   author,
+  book,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 };
